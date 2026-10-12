@@ -44,5 +44,7 @@ if __name__ == '__main__':
                 len(attribute_names)))
             for attribute_name in attribute_names:
                 logger.info("Attribute name: {0}".format(attribute_name))
+
+            attribute  = client.get_attributes(uid=uid)
         except Exception as e:
             logger.error(e)
